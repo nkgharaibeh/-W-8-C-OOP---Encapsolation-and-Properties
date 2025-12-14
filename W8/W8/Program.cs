@@ -15,6 +15,8 @@ namespace W8
             get { return _accountNumber; }
         }
 
+        // A Property is not about how data is stored, but about how an object is perceived.
+    
         // 3) خاصية للرصيد (Balance) للقراءة فقط من الخارج
         //   التعديل يكون فقط عبر Deposit / Withdraw
         public decimal Balance
@@ -106,3 +108,4 @@ namespace W8
         }
     }
 }
+
