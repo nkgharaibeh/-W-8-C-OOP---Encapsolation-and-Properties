@@ -8,16 +8,17 @@ namespace W8
         // 1) بيانات حساسة => private (Data Hiding)
         private string _accountNumber;
         private decimal _balance;
-
+    // A Property is not about how data is stored, but about how an object is perceived and Controlled.
+    // Field = Data while Property = Property = Logic + Data (Controlled Access to Data )
+        
         // 2) خاصية للقراءة فقط (Read-Only) => account number لا يتغيّر بعد الإنشاء
         public string AccountNumber
         {
             get { return _accountNumber; }
         }
 
-        // A Property is not about how data is stored, but about how an object is perceived.
-    
-        // 3) خاصية للرصيد (Balance) للقراءة فقط من الخارج
+        
+                // 3) خاصية للرصيد (Balance) للقراءة فقط من الخارج
         //   التعديل يكون فقط عبر Deposit / Withdraw
         public decimal Balance
         {
